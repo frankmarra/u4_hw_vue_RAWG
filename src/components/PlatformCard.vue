@@ -1,13 +1,13 @@
 <template>
-  <div class="card game-card">
+  <div class="card platform-card">
     <div class="image-wrapper">
       <!-- Image Goes Here -->
-      <img :src="this.gameImage" :alt="this.gameName" />
+      <img :src="this.platformImage" :alt="this.platformName" />
     </div>
     <div class="info-wrapper flex-col">
       <!-- Game Name Goes Here -->
-      <h4>{{ this.gameName }}</h4>
-      <h4>Rating: {{ this.gameRating }}</h4>
+      <h4>{{ this.platformName }}</h4>
+      
     </div>
   </div>
 </template>
@@ -16,9 +16,9 @@
   export default {
     name: 'GameCard',
     props: {
-      gameName: null,
-      gameImage: null,
-      gameRating: null
+      platformName: null,
+      platformImage: null,
+      
     }
   }
 </script>
